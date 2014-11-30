@@ -6,7 +6,7 @@ $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"],1);
 
-$dbconn = pg_connect(sprintf("host=%s dbname=%s user=%s password=%s"), $server, $db, $username, $password)
+$dbconn = pg_connect(sprintf("host=%s dbname=%s user=%s password=%s", $server, $db, $username, $password))
         or die('Could not connect: ' . pg_last_error());
 
 $query = file_get_contents("query1.sql");
