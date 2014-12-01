@@ -39,7 +39,7 @@ $query2 = file_get_contents("query2.sql");
 processQuery($query2, "Druhá úloha", array("Meno", "Platový stupeň", "Počet zamestnancov"));
 
 $query3 = file_get_contents("query3.sql");
-processQuery($query2, "Tretia úloha", array("Platový stupeň", "Maximálny plat", "Počet zamestnancov", "Celkové náklady", "Priemerné zvýšenie"));
+processQuery($query3, "Tretia úloha", array("Platový stupeň", "Maximálny plat", "Počet zamestnancov", "Celkové náklady", "Priemerné zvýšenie"));
 
 pg_close($dbconn);
 
